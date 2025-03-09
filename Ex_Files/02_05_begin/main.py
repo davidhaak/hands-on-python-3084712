@@ -6,6 +6,7 @@ STAGING = "staging"
 CODE_SPACE = "code_space"
 LOCAL = "local"
 
+#grabbing needed resources
 current_env = os.environ.get("ENV_NAME", DEVELOPMENT)
 
 if current_env == DEVELOPMENT:
@@ -14,6 +15,7 @@ elif current_env == PRODUCTION:
     print("Production environment")
 elif current_env == STAGING:
     print("Staging environment")
+#using elif to check multiple
 elif current_env in [CODE_SPACE, LOCAL]:
     print("Codespace or local environment")
 else:
