@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   copy-to-branches:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest #yaml
     steps:
       - uses: actions/checkout@v2
         with:
